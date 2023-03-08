@@ -1,3 +1,2 @@
 #!/bin/bash
-current_dir=$(pwd) parent_dir=$(dirname "$current_dir")find "$current_dir" -maxdepth 1 -name "*.html" -type f -newer "$parent_dir" -exec cp -n {} "$parent_dir" \;
-
+cp -un *.html ../
